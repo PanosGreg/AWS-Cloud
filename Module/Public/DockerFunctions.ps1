@@ -31,7 +31,7 @@ function Get-DockerPS {
             Status         = $_.Status
         }
         $DefaultSet        = 'Names','Command','Ports','Status'
-        $DefaultDisplaySet = [System.Management.Automation.PSPropertySet]::new(‘DefaultDisplayPropertySet’,[string[]]$DefaultSet)
+        $DefaultDisplaySet = [System.Management.Automation.PSPropertySet]::new('DefaultDisplayPropertySet',[string[]]$DefaultSet)
         $PSStandardMembers = [System.Management.Automation.PSMemberInfo[]]@($DefaultDisplaySet)
         $obj | Add-Member MemberSet PSStandardMembers $PSStandardMembers -PassThru
     }

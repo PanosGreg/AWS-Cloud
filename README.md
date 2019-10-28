@@ -10,12 +10,15 @@ I've also recorded a demo of how it works.
 
 ![AWS-Cloud module recording](https://raw.githubusercontent.com/PanosGreg/AWS-Cloud/master/Notes/Terminalizer/demo-aws.gif)
 
-The recording was done with Terminalizer by the way.
-So if anyone wants to replay it on his own PowerShell console, just use the demo-aws.yml file in the Notes folder.
+The recording was done with **Terminalizer** by the way.
+So if anyone wants to replay it on his own PowerShell console, just use the *demo-aws.yml* file in the Notes folder.
 
 ```powershell
 terminalizer play demo-aws.yml
 ```
+
+I've also written a script that automates the installation process of Terminalizer.  
+You can find that in the Notes folder as well.
 
 Author:     Panos Grigoriadis  
 Date:       Oct. 2019  

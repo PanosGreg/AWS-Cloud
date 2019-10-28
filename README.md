@@ -1,6 +1,6 @@
 ### AWS-Cloud Module
 
-This module contains some handy function to expedite the creation of a virtual private cloud.
+This module contains some handy functions to expedite the creation of a virtual private cloud.
 
 This was written during my learning stage of AWS and how each component relates to each other.
 

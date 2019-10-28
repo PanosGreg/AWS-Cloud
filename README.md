@@ -19,5 +19,4 @@ terminalizer play demo-aws.yml
 
 Author:     Panos Grigoriadis  
 Date:       Oct. 2019  
-Company:    Zarrdia  
 Version:    0.1.0  

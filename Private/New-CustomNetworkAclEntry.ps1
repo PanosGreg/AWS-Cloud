@@ -39,7 +39,7 @@ switch ($Connection) {
     'Random' {$FromPort=49152;$ToPort=65535}
 }
 
-$AllAclEntries = (Get-EC2NetworkAcl -NetworkAclId $NaclId).Entries
+$AllAclEntries = (Get-EC2NetworkAcl -NetworkAclId $NaclId 4>$null).Entries
 $DirectedAcls = $AllAclEntries.Where({$_.Egress -eq $Egress -and $_.RuleNumber -ne 32767}) 
 $MaxAcl       = [int]($DirectedAcls | Measure-Object RuleNumber -Maximum).Maximum
 
@@ -61,6 +61,6 @@ else {
     $Params['PortRange_To']   = $ToPort
 }
 
-New-EC2NetworkAclEntry @Params | Out-Null
+New-EC2NetworkAclEntry @Params 4>$null | Out-Null
 
 } #function

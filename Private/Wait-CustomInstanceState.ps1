@@ -10,7 +10,7 @@ param
 )
 
     while ($true) {
-        $obj = Get-EC2InstanceStatus -IncludeAllInstance $true -InstanceId $InstanceId
+        $obj = Get-EC2InstanceStatus -IncludeAllInstance $true -InstanceId $InstanceId 4>$null
         $status = $obj.InstanceState.Name.Value
         if ($status -eq $DesiredState) {Write-Verbose "$(Prefix)Instance started!";Break}
         else {

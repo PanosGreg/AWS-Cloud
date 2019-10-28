@@ -14,12 +14,12 @@ param (
         @{key='Environment' ; value=$EnvTag},
         @{key='Name' ;        value="$NameTag-SecurityGroup"}
     )
-    $VpcId = (Get-EC2Vpc -Filter @{name='tag:Name' ; value="$NameTag"}).VpcId
+    $VpcId = (Get-EC2Vpc -Filter @{name='tag:Name' ; value="$NameTag"} 4>$null).VpcId
     #endregion
 
     Write-Verbose "$(Prefix)Creating the Security Group..."
-    $SgId = (Get-EC2SecurityGroup -Filter @{name='vpc-id' ; value = $VpcId}).GroupId
-    New-EC2Tag -Resource $SgId -Tag $Tags
+    $SgId = (Get-EC2SecurityGroup -Filter @{name='vpc-id' ; value = $VpcId} 4>$null).GroupId
+    New-EC2Tag -Resource $SgId -Tag $Tags 4>$null
 
     # in security groups there is no action to allow or deny
     # hence each rule allows the specified traffic
@@ -38,7 +38,7 @@ param (
             $IpPerms.FromPort   = $FromPort
             $IpPerms.ToPort     = $ToPort
             $IpPerms.IpRanges   = @('0.0.0.0/0')
-            Grant-EC2SecurityGroupIngress -GroupId $SgId -IpPermissions $IpPerms | Out-Null
+            Grant-EC2SecurityGroupIngress -GroupId $SgId -IpPermissions $IpPerms 4>$null | Out-Null
         }
     }
 }

@@ -9,10 +9,10 @@ param (
 )
 
     # Create the key pair that will be used to get the login credentials for windows
-    $kp = try {Get-EC2KeyPair -KeyName "$NameTag-Key"} catch {$null}
+    $kp = try {Get-EC2KeyPair -KeyName "$NameTag-Key" 4>$null} catch {$null}
     if (-not [bool]$kp) {
         Write-Verbose "$(Prefix)Creating the Key Pair..."
-        $kp = New-EC2KeyPair -KeyName "$NameTag-Key"
+        $kp = New-EC2KeyPair -KeyName "$NameTag-Key" 4>$null
     }
     Write-Verbose "$(Prefix)Creating the Certificate file..."
     $PemFile = Join-Path -Path $env:TEMP -ChildPath "$NameTag-Key.pem"

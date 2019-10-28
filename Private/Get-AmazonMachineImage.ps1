@@ -14,7 +14,7 @@ param (
             @{Name = 'platform' ; Values = 'windows'}
             @{name='name' ; values="*$ver*English*Base*"}  # alt: 2019|1903, Base|ECS|*
         )
-        $AllWin = Get-EC2Image -Owners amazon -Filters $filters | where name -notlike *sql*
+        $AllWin = Get-EC2Image -Owners amazon -Filters $filters 4>$null | where name -notlike *sql*
         $AllWin | foreach {
             $CreationDate =  $_.CreationDate.Substring(0,19)
             [pscustomobject] @{
@@ -28,7 +28,7 @@ param (
     if ($OsType -eq 'Full') {$ver = '2019'}
 
     # get the latest one
-    $AMI = $Imgs | sort creationdate -Descending | where name -like "*$ver*$OsType*" | select -First 1
+    $AMI = $Imgs | sort creationdate -Descending | where name -like "*$ver*$OsType*" | select -First 1 # <-- get the latest one
 
     Write-Output $AMI
 }

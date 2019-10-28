@@ -56,7 +56,7 @@ Begin {
         EnvTag  = $Environment
     }
 
-    if ([bool](Get-DefaultAWSRegion)) {
+    if (-not [bool](Get-DefaultAWSRegion)) {
         throw 'Please set a default AWS region to work with!'
     }
 
@@ -83,7 +83,7 @@ Process {
     $AclRules = @{
         HTTP  = [bool]$AllowHTTP
         HTTPS = [bool]$AllowHTTP  # <-- the HTTP option sets both the HTTP and the HTTPS firewall rules
-        RDP   = [bool]$AllowHTTP
+        RDP   = [bool]$AllowRDP
         WinRM = [bool]$AllowWinRM
         ICMP  = [bool]$AllowPing
     }

@@ -15,14 +15,14 @@ $Tags = @(
     @{key='Environment' ; value=$EnvTag},
     @{key='Name' ;        value="$NameTag-Instance"}
 )
-$VpcId = (Get-EC2Vpc -Filter @{name='tag:Name' ; value="$NameTag"}).VpcId    
+$VpcId = (Get-EC2Vpc -Filter @{name='tag:Name' ; value="$NameTag"} 4>$null).VpcId    
 #endregion
 
         
 #region --------------------- create the instance
 Write-Verbose "$(Prefix)Creating the instance..."
-$SubnetId                = (Get-EC2Subnet -Filter @{name='vpc-id' ; value = $VpcId}).SubnetId
-$SecGrpId                = (Get-EC2SecurityGroup -Filter @{name='vpc-id' ; value = $VpcId}).GroupId
+$SubnetId                = (Get-EC2Subnet -Filter @{name='vpc-id' ; value = $VpcId} 4>$null).SubnetId
+$SecGrpId                = (Get-EC2SecurityGroup -Filter @{name='vpc-id' ; value = $VpcId} 4>$null).GroupId
 $bdm                     = [Amazon.EC2.Model.BlockDeviceMapping]::new()
 $bdm.DeviceName          = '/dev/sda1'
 $ebs                     = [Amazon.EC2.Model.EbsBlockDevice]::new()
@@ -35,8 +35,8 @@ $nispec.SubnetId         = $SubnetId
 $nispec.DeviceIndex      = 0
 $nispec.Groups.Add($SecGrpId)
 $nispec.AssociatePublicIpAddress = $true
-$AvailabilityZone        = (Get-EC2AvailabilityZone)[0].ZoneName
-$KeyName                 = (Get-EC2KeyPair -KeyName "$NameTag-Key").KeyName
+$AvailabilityZone        = (Get-EC2AvailabilityZone 4>$null)[0].ZoneName
+$KeyName                 = (Get-EC2KeyPair -KeyName "$NameTag-Key" 4>$null).KeyName
 
 switch ($VmSize) {
     'Micro'      {$InstanceType = 't3a.micro'}
@@ -60,9 +60,20 @@ $params = @{
     #AssociatePublicIp  = $true
 }
 
-$reservation = New-EC2Instance @params
+$Img = Get-EC2Image -ImageId $ImageId 4>$null
+if ($Img.Name -like "*Core*") {
+    $Script = @'
+<powershell>
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon' -name Shell -Value 'PowerShell.exe -noExit'
+</powershell>
+'@
+    $UserData = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($Script))
+    $params.UserData = $UserData
+}
+
+$reservation = New-EC2Instance @params 4>$null
 $instance = $reservation.Instances
-New-EC2Tag -Resource $instance.InstanceId -Tag $Tags
+New-EC2Tag -Resource $instance.InstanceId -Tag $Tags 4>$null
 Wait-CustomInstanceState -InstanceId $instance.InstanceId -DesiredState 'running'
 #endregion
 

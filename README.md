@@ -22,4 +22,4 @@ You can find that in the Notes folder as well.
 
 Author:     Panos Grigoriadis  
 Date:       Oct. 2019  
-Version:    0.1.0  
+Version:    0.2.0  

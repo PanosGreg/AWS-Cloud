@@ -1,0 +1,1343 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 45
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: window
+    title: PowerShell
+    style:
+      border: 0px black solid
+      boxShadow: 8px 8px 16px grey
+      # margin: 28px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: underline
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Consolas, Lucida Console, Monaco, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 14
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#eeedf0"
+    cursor: "#c7c7c7"
+    black: "#282a48"
+    red: "#bf0000"
+    green: "#008000"
+    yellow: "#f2c800"
+    blue: "#4472c4"
+    magenta: "#8a3cc4"
+    cyan: "#ff7e00"
+    white: "#c0c0c0"
+    brightBlack: "#808080"
+    brightRed: "#fe2020"
+    brightGreen: "#92d050"
+    brightYellow: "#f2f200"
+    brightBlue: "#3d94f3"
+    brightMagenta: "#fe8cff"
+    brightCyan: "#42e0d1"
+    brightWhite: "#a8a8a8"
+  
+# Records, feel free to edit them
+records:
+  - delay: 790
+    content: "\e[0m\e[0K"
+  - delay: 24
+    content: "Windows PowerShell\e[0K\e[?25l\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[0K\r\n\e[0K\r\nTry the new cross-platform PowerShell https://aka.ms/pscore6\e[0K\r\n\e[0K\r\n\e[0K\e[?25h"
+  - delay: 383
+    content: "\e[0;32;92mTotal profile load time: 0.2s\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 26
+    content: "\e]0;[18052] Windows PowerShell 5.1 (00h00m)\a"
+  - delay: 34
+    content: "[1t00.0\e[0;1m/\e[0;32;92m19:29:14\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[24G"
+  - delay: 939
+    content: "\e[?25l\r[1t00.0\e[0;1m/\e[0;32;92m19:29:14\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#\e[0m\e[0K\e[?25h"
+  - delay: 336
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 158
+    content: "\e[0;32mw\e[0m\e[0K"
+  - delay: 35
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 96
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 120
+    content: "\e[0;32mn\e[0m\e[0K"
+  - delay: 124
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 132
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 123
+    content: "\e[0;32md\e[0m\e[0K"
+  - delay: 63
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 181
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 67
+    content: "\e[0;32mh\e[0m\e[0K"
+  - delay: 220
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 121
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 219
+    content: "\e[0;32mA\e[0m\e[0K"
+  - delay: 65
+    content: "\e[0;32mW\e[0m\e[0K"
+  - delay: 154
+    content: "\e[0;32mS\e[0m\e[0K"
+  - delay: 156
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 155
+    content: "\e[0;32mm\e[0m\e[0K"
+  - delay: 67
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 121
+    content: "\e[0;32md\e[0m\e[0K"
+  - delay: 68
+    content: "\e[0;32mu\e[0m\e[0K"
+  - delay: 90
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 127
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 56
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 193
+    content: "\e[0;32mf\e[0m\e[0K"
+  - delay: 59
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 93
+    content: "\e[0;32mr\e[0m\e[0K"
+  - delay: 62
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 164
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 31
+    content: "\e[0;32mh\e[0m\e[0K"
+  - delay: 154
+    content: "\e[0;32mi\e[0m\e[0K"
+  - delay: 123
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 30
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 159
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 64
+    content: "\e[0;32mn\e[0m\e[0K"
+  - delay: 1002
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 29
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 25
+    content: "[2t00.0\e[0;1m/\e[0;32;92m19:29:20\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[24G"
+  - delay: 1002
+    content: "\e[?25l\r[2t00.0\e[0;1m/\e[0;32;92m19:29:20\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mi\e[0m\e[0K\e[?25h"
+  - delay: 130
+    content: "\e[0;33;93mm\e[0m\e[0K"
+  - delay: 190
+    content: "\e[0;33;93mp\e[0m\e[0K"
+  - delay: 54
+    content: "\e[0;33;93mo\e[0m\e[0K"
+  - delay: 95
+    content: "\e[0;33;93mr\e[0m\e[0K"
+  - delay: 68
+    content: "\e[0;33;93mt\e[0m\e[0K"
+  - delay: 63
+    content: "\e[0;33;93m-\e[0m\e[0K"
+  - delay: 187
+    content: "\e[0;33;93mm\e[0m\e[0K"
+  - delay: 29
+    content: "\e[0;33;93mo\e[0m\e[0K"
+  - delay: 125
+    content: "\e[0;33;93md\e[0m\e[0K"
+  - delay: 190
+    content: "\e[?25l\r[2t00.0\e[0;1m/\e[0;32;92m19:29:20\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m\e[0K\e[38G\e[?25h"
+  - delay: 180
+    content: "\e[?25l\r[2t00.0\e[0;1m/\e[0;32;92m19:29:20\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m a\e[0K\e[?25h"
+  - delay: 102
+    content: "w\e[0K"
+  - delay: 622
+    content: "s\e[0K"
+  - delay: 62
+    content: "p\e[0K"
+  - delay: 751
+    content: "\e[?25l\r[2t00.0\e[0;1m/\e[0;32;92m19:29:20\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m AWSPowerShell\e[0K\e[?25h"
+  - delay: 463
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 2193
+    content: "[3t02.1\e[0;1m/\e[0;32;92m19:29:26\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[24G"
+  - delay: 721
+    content: "\e[?25l\r\n[3t02.1\e[0;1m/\e[0;32;92m19:29:27\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[?25h"
+  - delay: 182
+    content: "\e[24G"
+  - delay: 192
+    content: "\e[?25l\r[3t02.1\e[0;1m/\e[0;32;92m19:29:27\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#\e[0m\e[0K\e[?25h"
+  - delay: 339
+    content: "\e[0;32mw\e[0m\e[0K"
+  - delay: 29
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 162
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 151
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 99
+    content: "\e[0;32ma\e[0m\e[0K"
+  - delay: 86
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 102
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 124
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 181
+    content: "\e[0;32mn\e[0m\e[0K"
+  - delay: 101
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 121
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 123
+    content: "\e[0;32md\e[0m\e[0K"
+  - delay: 97
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 60
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 126
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 93
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 565
+    content: "\e[?25l\r[3t02.1\e[0;1m/\e[0;32;92m19:29:27\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#we laso need \e[0;30;47mto \e[0m\e[0K\e[38G\e[?25h"
+  - delay: 157
+    content: "\e[?25l\r[3t02.1\e[0;1m/\e[0;32;92m19:29:27\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#we laso \e[0;30;47mneed to \e[0m\e[0K\e[33G\e[?25h"
+  - delay: 591
+    content: "\e[?25l\r[3t02.1\e[0;1m/\e[0;32;92m19:29:27\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#we \e[0;30;47mlaso need to \e[0m\e[0K\e[28G\e[?25h"
+  - delay: 475
+    content: "\e[?25l\r[3t02.1\e[0;1m/\e[0;32;92m19:29:27\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#we a\e[0m\e[0K\e[?25h"
+  - delay: 57
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 160
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 148
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 95
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 226
+    content: "\e[0;32mn\e[0m\e[0K"
+  - delay: 89
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 130
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 120
+    content: "\e[0;32md\e[0m\e[0K"
+  - delay: 91
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 628
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 67
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 64
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 240
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 36
+    content: "\e[0;32mp\e[0m\e[0K"
+  - delay: 97
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 151
+    content: "\e[0;32mc\e[0m\e[0K"
+  - delay: 161
+    content: "\e[0;32mi\e[0m\e[0K"
+  - delay: 180
+    content: "\e[0;32mf\e[0m\e[0K"
+  - delay: 443
+    content: "\e[0;32my\e[0m\e[0K"
+  - delay: 402
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 786
+    content: "\e[0;32ma\e[0m\e[0K"
+  - delay: 1032
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 222
+    content: "\e[0;32md\e[0m\e[0K"
+  - delay: 27
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 182
+    content: "\e[0;32ma\e[0m\e[0K"
+  - delay: 348
+    content: "\e[0;32mf\e[0m\e[0K"
+  - delay: 970
+    content: "\e[?25l\r[3t02.1\e[0;1m/\e[0;32;92m19:29:27\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#we also need to specify a dea\e[0m\e[0K\e[?25h"
+  - delay: 152
+    content: "\e[?25l\r[3t02.1\e[0;1m/\e[0;32;92m19:29:27\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#we also need to specify a de\e[0m\e[0K\e[?25h"
+  - delay: 195
+    content: "\e[0;32mf\e[0m\e[0K"
+  - delay: 154
+    content: "\e[0;32ma\e[0m\e[0K"
+  - delay: 251
+    content: "\e[0;32mu\e[0m\e[0K"
+  - delay: 468
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 89
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 132
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 248
+    content: "\e[0;32mr\e[0m\e[0K"
+  - delay: 28
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 156
+    content: "\e[0;32mg\e[0m\e[0K"
+  - delay: 64
+    content: "\e[0;32mi\e[0m\e[0K"
+  - delay: 35
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 181
+    content: "\e[0;32mn\e[0m\e[0K"
+  - delay: 414
+    content: "\e[?25l\r\n[4t00.0\e[0;1m/\e[0;32;92m19:29:41\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[24G\e[?25h"
+  - delay: 1342
+    content: "\e[?25l\r[4t00.0\e[0;1m/\e[0;32;92m19:29:41\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93ms\e[0m\e[0K\e[?25h"
+  - delay: 27
+    content: "\e[0;33;93me\e[0m\e[0K"
+  - delay: 95
+    content: "\e[0;33;93mt\e[0m\e[0K"
+  - delay: 253
+    content: "\e[0;33;93m-\e[0m\e[0K"
+  - delay: 185
+    content: "\e[0;33;93md\e[0m\e[0K"
+  - delay: 30
+    content: "\e[0;33;93me\e[0m\e[0K"
+  - delay: 121
+    content: "\e[0;33;93mf\e[0m\e[0K"
+  - delay: 351
+    content: "\e[?25l\r[4t00.0\e[0;1m/\e[0;32;92m19:29:41\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mSet-DefaultAWSRegion\e[0m\e[0K\e[?25h"
+  - delay: 185
+    content: "\e[45G"
+  - delay: 378
+    content: "\e[?25l\r[4t00.0\e[0;1m/\e[0;32;92m19:29:41\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mSet-DefaultAWSRegion\e[0m \e[0;37;90m-\e[0m\e[0K\e[?25h"
+  - delay: 56
+    content: "\e[0;37;90mr\e[0m\e[0K"
+  - delay: 92
+    content: "\e[0;37;90me\e[0m\e[0K"
+  - delay: 102
+    content: "\e[?25l\r[4t00.0\e[0;1m/\e[0;32;92m19:29:41\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mSet-DefaultAWSRegion\e[0m \e[0;37;90m-Region\e[0m\e[0K\e[?25h"
+  - delay: 153
+    content: "\e[53G"
+  - delay: 783
+    content: "\e[?25l\r[4t00.0\e[0;1m/\e[0;32;92m19:29:41\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mSet-DefaultAWSRegion\e[0m \e[0;37;90m-Region\e[0m e\e[0K\e[?25h"
+  - delay: 58
+    content: "u\e[0K"
+  - delay: 411
+    content: "-\e[0K"
+  - delay: 153
+    content: "w\e[0K"
+  - delay: 185
+    content: "est-1\e[0K"
+  - delay: 351
+    content: "\e[?25l\r\n[5t00.0\e[0;1m/\e[0;32;92m19:29:46\e[0m\e[0K\e[?25h"
+  - delay: 25
+    content: "] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[24G"
+  - delay: 974
+    content: "\e[?25l\r\n[5t00.0\e[0;1m/\e[0;32;92m19:29:47\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[24G\e[?25h"
+  - delay: 434
+    content: "\e[?25l\r[5t00.0\e[0;1m/\e[0;32;92m19:29:47\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#\e[0m\e[0K\e[?25h"
+  - delay: 285
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 92
+    content: "\e[0;32mn\e[0m\e[0K"
+  - delay: 63
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 128
+    content: "\e[0;32mw\e[0m\e[0K"
+  - delay: 123
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 1716
+    content: "\e[?25l\r[5t00.0\e[0;1m/\e[0;32;92m19:29:47\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m# now\e[0m\e[0K\e[?25h"
+  - delay: 130
+    content: "\e[?25l\r[5t00.0\e[0;1m/\e[0;32;92m19:29:47\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m# no\e[0m\e[0K\e[?25h"
+  - delay: 126
+    content: "\e[?25l\r[5t00.0\e[0;1m/\e[0;32;92m19:29:47\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m# n\e[0m\e[0K\e[?25h"
+  - delay: 213
+    content: "\e[?25l\r[5t00.0\e[0;1m/\e[0;32;92m19:29:47\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m# \e[0m\e[0K\e[?25h"
+  - delay: 314
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 61
+    content: "\e[0;32mk\e[0m\e[0K"
+  - delay: 64
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 186
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 64
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 496
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 1001
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 317
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 62
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 3313
+    content: "\e[?25l\r[5t00.0\e[0;1m/\e[0;32;92m19:29:47\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m# ok so le\e[0m\e[0K\e[?25h"
+  - delay: 122
+    content: "\e[?25l\r[5t00.0\e[0;1m/\e[0;32;92m19:29:47\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m# ok so l\e[0m\e[0K\e[?25h"
+  - delay: 129
+    content: "\e[?25l\r[5t00.0\e[0;1m/\e[0;32;92m19:29:47\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m# ok so \e[0m\e[0K\e[?25h"
+  - delay: 468
+    content: "\e[0;32mf\e[0m\e[0K"
+  - delay: 184
+    content: "\e[0;32mi\e[0m\e[0K"
+  - delay: 98
+    content: "\e[0;32mr\e[0m\e[0K"
+  - delay: 150
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 473
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 190
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 1932
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 158
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 96
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 156
+    content: "\e[0;32m'\e[0m\e[0K"
+  - delay: 1064
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 121
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 284
+    content: "\e[0;32mi\e[0m\e[0K"
+  - delay: 155
+    content: "\e[0;32mm\e[0m\e[0K"
+  - delay: 152
+    content: "\e[0;32mp\e[0m\e[0K"
+  - delay: 65
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 123
+    content: "\e[0;32mr\e[0m\e[0K"
+  - delay: 36
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 88
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 913
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 27
+    content: "\e[0;32mh\e[0m\e[0K"
+  - delay: 191
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 60
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 155
+    content: "\e[0;32mm\e[0m\e[0K"
+  - delay: 37
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 121
+    content: "\e[0;32md\e[0m\e[0K"
+  - delay: 65
+    content: "\e[0;32mu\e[0m\e[0K"
+  - delay: 89
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 223
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 401
+    content: "\e[?25l\r\n[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[?25h"
+  - delay: 34
+    content: "\e[24G"
+  - delay: 1154
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mi\e[0m\e[0K\e[?25h"
+  - delay: 123
+    content: "\e[0;33;93mm\e[0m\e[0K"
+  - delay: 163
+    content: "\e[0;33;93mp\e[0m\e[0K"
+  - delay: 63
+    content: "\e[0;33;93mo\e[0m\e[0K"
+  - delay: 92
+    content: "\e[0;33;93mr\e[0m\e[0K"
+  - delay: 26
+    content: "\e[0;33;93mt\e[0m\e[0K"
+  - delay: 257
+    content: "\e[0;33;93mm\e[0m\e[0K"
+  - delay: 85
+    content: "\e[0;33;93mo\e[0m\e[0K"
+  - delay: 472
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mimportm\e[0m\e[0K\e[?25h"
+  - delay: 90
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mimport\e[0m\e[0K\e[?25h"
+  - delay: 257
+    content: "\e[0;33;93m-\e[0m\e[0K"
+  - delay: 344
+    content: "\e[0;33;93mm\e[0m\e[0K"
+  - delay: 63
+    content: "\e[0;33;93mo\e[0m\e[0K"
+  - delay: 341
+    content: "\e[0;33;93md\e[0m\e[0K"
+  - delay: 58
+    content: "\e[0;33;93mu\e[0m\e[0K"
+  - delay: 158
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m\e[0K\e[?25h"
+  - delay: 93
+    content: "\e[38G"
+  - delay: 437
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m c\e[0K\e[?25h"
+  - delay: 68
+    content: ":\e[0K"
+  - delay: 123
+    content: "\\\e[0K"
+  - delay: 311
+    content: "u\e[0K"
+  - delay: 97
+    content: "s\e[0K"
+  - delay: 185
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m C:\\Users\\\e[0K\e[?25h"
+  - delay: 376
+    content: "p\e[0K"
+  - delay: 565
+    content: "a\e[0K"
+  - delay: 187
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m C:\\Users\\Panos\\\e[0K\e[?25h"
+  - delay: 623
+    content: "d\e[0K"
+  - delay: 95
+    content: "o\e[0K"
+  - delay: 125
+    content: "c\e[0K"
+  - delay: 185
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m C:\\Users\\Panos\\Documents\\\e[0K\e[?25h"
+  - delay: 1189
+    content: "g\e[0K"
+  - delay: 190
+    content: "i\e[0K"
+  - delay: 88
+    content: "t\e[0K"
+  - delay: 290
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m \e[0;36m'C:\\Users\\Panos\\Documents\\Git Process.docx'\e[0m\e[0K\e[?25h"
+  - delay: 775
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m \e[0;36m'C:\\Users\\Panos\\Documents\\Git Process.txt'\e[0m\e[0K\e[?25h"
+  - delay: 157
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m C:\\Users\\Panos\\Documents\\GitHub\\\e[0K\e[?25h"
+  - delay: 127
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m \e[0;36m'C:\\Users\\Panos\\Documents\\Git Process.docx'\e[0m\e[0K\e[?25h"
+  - delay: 531
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m \e[0;36m'C:\\Users\\Panos\\Documents\\Git Process.txt'\e[0m\e[0K\e[?25h"
+  - delay: 595
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m C:\\Users\\Panos\\Documents\\GitHub\\\e[0K\e[?25h"
+  - delay: 591
+    content: "a\e[0K"
+  - delay: 34
+    content: "w\e[0K"
+  - delay: 182
+    content: "s\e[0K"
+  - delay: 223
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m C:\\Users\\Panos\\Documents\\GitHub\\AWS-Cloud\\\e[0K\e[?25h"
+  - delay: 781
+    content: "\e[?25l\r[6t00.0\e[0;1m/\e[0;32;92m19:30:05\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mImport-Module\e[0m C:\\Users\\Panos\\Documents\\GitHub\\AWS-Cloud\e[0K\e[?25h"
+  - delay: 720
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 63
+    content: "\e]0;[18052] Windows PowerShell 5.1 (00h01m)\a[7t00.0\e[0;1m/\e[0;32;92m19:30:19\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[24G"
+  - delay: 1183
+    content: "\e[?25l\r\n[7t00.0\e[0;1m/\e[0;32;92m19:30:20\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[24G\e[?25h"
+  - delay: 841
+    content: "\e[?25l\r[7t00.0\e[0;1m/\e[0;32;92m19:30:20\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#\e[0m\e[0K\e[?25h"
+  - delay: 346
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 67
+    content: "\e[0;32mn\e[0m\e[0K"
+  - delay: 63
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 123
+    content: "\e[0;32mw\e[0m\e[0K"
+  - delay: 28
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 252
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 1000
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 58
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 912
+    content: "\e[0;32m'\e[0m\e[0K"
+  - delay: 87
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 67
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 380
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 683
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 375
+    content: "\e[?25l\r[7t00.0\e[0;1m/\e[0;32;92m19:30:20\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m# now let's e\e[0m\e[0K\e[?25h"
+  - delay: 155
+    content: "\e[?25l\r[7t00.0\e[0;1m/\e[0;32;92m19:30:20\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m# now let's \e[0m\e[0K\e[?25h"
+  - delay: 348
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 219
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 93
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 276
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 630
+    content: "\e[0;32mwh\e[0m\e[0K"
+  - delay: 119
+    content: "\e[0;32ma\e[0m\e[0K"
+  - delay: 66
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 187
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 466
+    content: "\e[0;32mc\e[0m\e[0K"
+  - delay: 34
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 190
+    content: "\e[0;32mm\e[0m\e[0K"
+  - delay: 90
+    content: "\e[0;32mm\e[0m\e[0K"
+  - delay: 37
+    content: "\e[0;32ma\e[0m\e[0K"
+  - delay: 154
+    content: "\e[0;32mn\e[0m\e[0K"
+  - delay: 66
+    content: "\e[0;32md\e[0m\e[0K"
+  - delay: 92
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 720
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 342
+    content: "\e[0;32md\e[0m\e[0K"
+  - delay: 251
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 60
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 155
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 65
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 152
+    content: "\e[0;32mi\e[0m\e[0K"
+  - delay: 34
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 96
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 338
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 189
+    content: "\e[0;32mf\e[0m\e[0K"
+  - delay: 97
+    content: "\e[0;32mf\e[0m\e[0K"
+  - delay: 118
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 70
+    content: "\e[0;32mr\e[0m\e[0K"
+  - delay: 91
+    content: "\e[?25l\r\n[8t00.0\e[0;1m/\e[0;32;92m19:30:31\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[24G\e[?25h"
+  - delay: 1255
+    content: "\e[?25l\r[8t00.0\e[0;1m/\e[0;32;92m19:30:31\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mg\e[0m\e[0K\e[?25h"
+  - delay: 88
+    content: "\e[0;33;93me\e[0m\e[0K"
+  - delay: 94
+    content: "\e[0;33;93mt\e[0m\e[0K"
+  - delay: 33
+    content: "\e[0;33;93m-\e[0m\e[0K"
+  - delay: 158
+    content: "\e[0;33;93mc\e[0m\e[0K"
+  - delay: 61
+    content: "\e[0;33;93mo\e[0m\e[0K"
+  - delay: 96
+    content: "\e[0;33;93mm\e[0m\e[0K"
+  - delay: 124
+    content: "\e[0;33;93mm\e[0m\e[0K"
+  - delay: 86
+    content: "\e[?25l\r[8t00.0\e[0;1m/\e[0;32;92m19:30:31\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mGet-Command\e[0m\e[0K\e[?25h"
+  - delay: 100
+    content: " \e[0;37;90m-\e[0m\e[0K"
+  - delay: 151
+    content: "\e[0;37;90mm\e[0m\e[0K"
+  - delay: 62
+    content: "\e[0;37;90mo\e[0m\e[0K"
+  - delay: 67
+    content: "\e[0;37;90md\e[0m\e[0K"
+  - delay: 93
+    content: "\e[?25l\r[8t00.0\e[0;1m/\e[0;32;92m19:30:31\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mGet-Command\e[0m \e[0;37;90m-Module\e[0m\e[0K\e[?25h"
+  - delay: 124
+    content: "\e[44G"
+  - delay: 435
+    content: "\e[?25l\r[8t00.0\e[0;1m/\e[0;32;92m19:30:31\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mGet-Command\e[0m \e[0;37;90m-Module\e[0m a\e[0K\e[?25h"
+  - delay: 35
+    content: "w\e[0K"
+  - delay: 153
+    content: "s\e[0K"
+  - delay: 193
+    content: "-\e[0K"
+  - delay: 96
+    content: "\e[?25l\r[8t00.0\e[0;1m/\e[0;32;92m19:30:31\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mGet-Command\e[0m \e[0;37;90m-Module\e[0m AWS-Cloud\e[0K\e[?25h"
+  - delay: 496
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 35
+    content: "\e[?25l\r\nCommandType     Name                                               Version    Source\e[0K\r\n-----------     ----                                               -------    ------\e[0K\r\nFunction        Get-AwsCost                                        0.2.0      AWS-Cloud\e[0K\r\nFunction        Get-DockerImages                                   0.2.0      AWS-Cloud\e[0K\r\nFunction        Get-DockerPS                                       0.2.0      AWS-Cloud\e[0K\r\nFunction        New-VpcInfrastructure                              0.2.0      AWS-Cloud\e[0K\r\n\e[0K\r\n\e[0K\r\n[9t00.0\e[0;1m/\e[0;32;92m19:30:35\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[24G\e[?25h"
+  - delay: 1657
+    content: "\e[?25l\r[9t00.0\e[0;1m/\e[0;32;92m19:30:35\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#\e[0m\e[0K\e[?25h"
+  - delay: 153
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 276
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 37
+    content: "\e[0;32mh\e[0m\e[0K"
+  - delay: 150
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 38
+    content: "\e[0;32mn\e[0m\e[0K"
+  - delay: 188
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 502
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 277
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 59
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 411
+    content: "\e[0;32m'\e[0m\e[0K"
+  - delay: 97
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 61
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 305
+    content: "\e[0;32mc\e[0m\e[0K"
+  - delay: 68
+    content: "\e[0;32mh\e[0m\e[0K"
+  - delay: 58
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 68
+    content: "\e[0;32mc\e[0m\e[0K"
+  - delay: 64
+    content: "\e[0;32mk\e[0m\e[0K"
+  - delay: 180
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 753
+    content: "\e[0;32ma\e[0m\e[0K"
+  - delay: 31
+    content: "\e[0;32mn\e[0m\e[0K"
+  - delay: 122
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 193
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 158
+    content: "\e[0;32mx\e[0m\e[0K"
+  - delay: 124
+    content: "\e[0;32ma\e[0m\e[0K"
+  - delay: 63
+    content: "\e[0;32mm\e[0m\e[0K"
+  - delay: 120
+    content: "\e[0;32mp\e[0m\e[0K"
+  - delay: 68
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 91
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 339
+    content: "\e[?25l\r\n[10\e[0K\e[?25h"
+  - delay: 35
+    content: "t00.0\e[0;1m/\e[0;32;92m19:30:42\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G"
+  - delay: 1125
+    content: "\e[?25l\r[10t00.0\e[0;1m/\e[0;32;92m19:30:42\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mg\e[0m\e[0K\e[?25h"
+  - delay: 154
+    content: "\e[0;33;93me\e[0m\e[0K"
+  - delay: 36
+    content: "\e[0;33;93mt\e[0m\e[0K"
+  - delay: 63
+    content: "\e[0;33;93m-\e[0m\e[0K"
+  - delay: 121
+    content: "\e[0;33;93mh\e[0m\e[0K"
+  - delay: 186
+    content: "\e[0;33;93me\e[0m\e[0K"
+  - delay: 35
+    content: "\e[0;33;93ml\e[0m\e[0K"
+  - delay: 219
+    content: "\e[?25l\r[10t00.0\e[0;1m/\e[0;32;92m19:30:42\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mGet-Help\e[0m\e[0K\e[?25h"
+  - delay: 347
+    content: "\e[34G"
+  - delay: 467
+    content: "\e[?25l\r[10t00.0\e[0;1m/\e[0;32;92m19:30:42\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mGet-Help\e[0m n\e[0K\e[?25h"
+  - delay: 252
+    content: "e\e[0K"
+  - delay: 62
+    content: "w\e[0K"
+  - delay: 308
+    content: "-\e[0K"
+  - delay: 470
+    content: "v\e[0K"
+  - delay: 777
+    content: "p\e[0K"
+  - delay: 190
+    content: "c\e[0K"
+  - delay: 124
+    content: "i\e[0K"
+  - delay: 31
+    content: "n\e[0K"
+  - delay: 381
+    content: "f\e[0K"
+  - delay: 185
+    content: "r\e[0K"
+  - delay: 127
+    content: "\e[?25l\r[10t00.0\e[0;1m/\e[0;32;92m19:30:42\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mGet-Help\e[0m New-VpcInfrastructure\e[0K\e[?25h"
+  - delay: 652
+    content: "\e[56G"
+  - delay: 126
+    content: "\e[?25l\r[10t00.0\e[0;1m/\e[0;32;92m19:30:42\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mGet-Help\e[0m New-VpcInfrastructure \e[0;1m0\e[0m\e[0K\e[?25h"
+  - delay: 374
+    content: "\e[?25l\r[10t00.0\e[0;1m/\e[0;32;92m19:30:42\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mGet-Help\e[0m New-VpcInfrastructure\e[0K\e[56G\e[?25h"
+  - delay: 95
+    content: "\e[?25l\r[10t00.0\e[0;1m/\e[0;32;92m19:30:42\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mGet-Help\e[0m New-VpcInfrastructure \e[0;37;90m-\e[0m\e[0K\e[?25h"
+  - delay: 119
+    content: "\e[0;37;90me\e[0m\e[0K"
+  - delay: 158
+    content: "\e[0;37;90mx\e[0m\e[0K"
+  - delay: 163
+    content: "\e[?25l\r[10t00.0\e[0;1m/\e[0;32;92m19:30:42\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mGet-Help\e[0m New-VpcInfrastructure \e[0;37;90m-Examples\e[0m\e[0K\e[?25h"
+  - delay: 683
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 65
+    content: "\e[?25l\r\nNAME\e[0K\r\n    New-VpcInfrastructure\e[0K\r\n\e[0K\r\nSYNOPSIS\e[0K\r\n    Creates a new Virtual Private Cloud (VPC) in AWS, along with all pre-requisite resources\e[0K\r\n\e[0K\r\n\e[0K\r\n    -------------------------- EXAMPLE 1 --------------------------\e[0K\r\n\e[0K\r\n    PS C:\\>$params = @{\e[0K\r\n\e[0K\r\n    Name        = 'MyLab'\e[0K\r\n        VmSize      = 'small'\e[0K\r\n        Network     = '10.0.0.0/22'\e[0K\r\n        Subnet      = '10.0.1.0/24'\e[0K\r\n        Environment = 'Test'\e[0K\r\n        AllowRDP    = $true\e[0K\r\n        AllowPing   = $true\e[0K\r\n        OsType      = 'Core'\e[0K\r\n    }\e[0K\r\n    $details = New-VpcInfrastructure @params -Verbose\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n\e[0K\r\n[11t00.0\e[0;1m/\e[0;32;92m19:30:50\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G\e[?25h"
+  - delay: 1625
+    content: "\e[?25l\r[11t00.0\e[0;1m/\e[0;32;92m19:30:50\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#\e[0m\e[0K\e[?25h"
+  - delay: 342
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 90
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 36
+    content: "\e[0;32mk\e[0m\e[0K"
+  - delay: 92
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 847
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 62
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 157
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 188
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 310
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 26
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 125
+    content: "\e[0;32m'\e[0m\e[0K"
+  - delay: 163
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 60
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 250
+    content: "\e[0;32mg\e[0m\e[0K"
+  - delay: 62
+    content: "\e[0;32mi\e[0m\e[0K"
+  - delay: 121
+    content: "\e[0;32mv\e[0m\e[0K"
+  - delay: 70
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 60
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 91
+    content: "\e[0;32mi\e[0m\e[0K"
+  - delay: 61
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 127
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 98
+    content: "\e[0;32ma\e[0m\e[0K"
+  - delay: 85
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 347
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 36
+    content: "\e[0;32mr\e[0m\e[0K"
+  - delay: 59
+    content: "\e[0;32my\e[0m\e[0K"
+  - delay: 344
+    content: "\e[0;32m!\e[0m\e[0K"
+  - delay: 2408
+    content: "\e[?25l\r\n[12t00.0\e[0;1m/\e[0;32;92m19:30:58\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G\e[?25h"
+  - delay: 595
+    content: "\e[?25l\r\n[12t00.0\e[0;1m/\e[0;32;92m19:30:59\e[0m] \e[0;34;94mC:\\\e[0m\e[0K\e[?25h"
+  - delay: 25
+    content: "\e[0;1m>\e[0m\e[0K\e[25G"
+  - delay: 220
+    content: "\e[?25l\r[12t00.0\e[0;1m/\e[0;32;92m19:30:59\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$params\e[0m \e[0;37;90m=\e[0m @{\e[0K\r\n>>         \e[0;1mName\e[0m        \e[0;37;90m=\e[0m \e[0;36m'MyLab'\e[0m\e[0K\r\n>>         \e[0;1mVmSize\e[0m      \e[0;37;90m=\e[0m \e[0;36m'small'\e[0K\r\n\e[0m>>         \e[0;1mNetwork\e[0m     \e[0;37;90m=\e[0m \e[0;36m'10.0.0.0/22'\e[0K\r\n\e[0m>>         \e[0;1mSubnet\e[0m      \e[0;37;90m=\e[0m \e[0;36m'10.0.1.0/24'\e[0K\r\n\e[0m>>         \e[0;1mEnvironment\e[0m \e[0;37;90m=\e[0m \e[0;36m'Test'\e[0K\r\n\e[0m>>         \e[0;1mAllowRDP\e[0m    \e[0;37;90m=\e[0m \e[0;32;92m$true\e[0;36m\e[0K\r\n\e[0m>>         \e[0;1mAllowPing\e[0m   \e[0;37;90m=\e[0m \e[0;32;92m$true\e[0K\r\n\e[0m>>         \e[0;1mOsType\e[0m      \e[0;37;90m=\e[0m \e[0;36m'Core'\e[0;32;92m\e[0K\r\n\e[0m>> }\e[0;36m\e[0K\e[?25h"
+  - delay: 655
+    content: "\e[?25l\r\n\e[0m[13t00.0\e[0;1m/\e[0;32;92m19:31:00\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G\e[?25h"
+  - delay: 906
+    content: "\e[?25l\r\n[13t00.0\e[0;1m/\e[0;32;92m19:31:01\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G\e[?25h"
+  - delay: 599
+    content: "\e[?25l\r[13t00.0\e[0;1m/\e[0;32;92m19:31:01\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93m$\e[0m\e[0K\e[?25h"
+  - delay: 216
+    content: "\e[?25l\r[13t00.0\e[0;1m/\e[0;32;92m19:31:01\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$d\e[0m\e[0K\e[?25h"
+  - delay: 59
+    content: "\e[0;32;92me\e[0m\e[0K"
+  - delay: 159
+    content: "\e[0;32;92mt\e[0m\e[0K"
+  - delay: 130
+    content: "\e[0;32;92ma\e[0m\e[0K"
+  - delay: 61
+    content: "\e[0;32;92mi\e[0m\e[0K"
+  - delay: 64
+    content: "\e[0;32;92ml\e[0m\e[0K"
+  - delay: 88
+    content: "\e[0;32;92ms\e[0m\e[0K"
+  - delay: 473
+    content: "\e[34G"
+  - delay: 63
+    content: "\e[?25l\r[13t00.0\e[0;1m/\e[0;32;92m19:31:01\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m \e[0;37;90m=\e[0m\e[0K\e[?25h"
+  - delay: 62
+    content: "\e[36G"
+  - delay: 467
+    content: "\e[?25l\r[13t00.0\e[0;1m/\e[0;32;92m19:31:01\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m \e[0;37;90m=\e[0m \e[0;33;93mn\e[0m\e[0K\e[?25h"
+  - delay: 280
+    content: "\e[0;33;93me\e[0m\e[0K"
+  - delay: 66
+    content: "\e[0;33;93mw\e[0m\e[0K"
+  - delay: 64
+    content: "\e[0;33;93m-\e[0m\e[0K"
+  - delay: 344
+    content: "\e[0;33;93mv\e[0m\e[0K"
+  - delay: 62
+    content: "\e[0;33;93mp\e[0m\e[0K"
+  - delay: 306
+    content: "\e[0;33;93mc\e[0m\e[0K"
+  - delay: 185
+    content: "\e[0;33;93mi\e[0m\e[0K"
+  - delay: 66
+    content: "\e[0;33;93mn\e[0m\e[0K"
+  - delay: 248
+    content: "\e[0;33;93mf\e[0m\e[0K"
+  - delay: 65
+    content: "\e[0;33;93mr\e[0m\e[0K"
+  - delay: 219
+    content: "\e[?25l\r[13t00.0\e[0;1m/\e[0;32;92m19:31:01\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m \e[0;37;90m=\e[0m \e[0;33;93mNew-VpcInfrastructure\e[0m\e[0K\e[?25h"
+  - delay: 214
+    content: "\e[58G"
+  - delay: 1164
+    content: "\e[?25l\r[13t00.0\e[0;1m/\e[0;32;92m19:31:01\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m \e[0;37;90m=\e[0m \e[0;33;93mNew-VpcInfrastructure\e[0m @\e[0K\e[?25h"
+  - delay: 281
+    content: "\e[?25l\r[13t00.0\e[0;1m/\e[0;32;92m19:31:01\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m \e[0;37;90m=\e[0m \e[0;33;93mNew-VpcInfrastructure\e[0m \e[0;32;92m@p\e[0m\e[0K\e[?25h"
+  - delay: 31
+    content: "\e[0;32;92ma\e[0m\e[0K"
+  - delay: 159
+    content: "\e[0;32;92mr\e[0m\e[0K"
+  - delay: 1024
+    content: "\e[0;32;92mams\e[0m \e[0;37;90m-ver\e[0m\e[0K"
+  - delay: 161
+    content: "\e[?25l\r[13t00.0\e[0;1m/\e[0;32;92m19:31:01\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m \e[0;37;90m=\e[0m \e[0;33;93mNew-VpcInfrastructure\e[0m \e[0;32;92m@params\e[0m \e[0;37;90m-Verbose\e[0m\e[0K\e[?25h"
+  - delay: 185
+    content: "\e[75G"
+  - delay: 2278
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 385
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:11]::Creating new VPC with CIDR block 10.0.0.0/22...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 432
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:11]::Creating the Internet Gateway...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 502
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:12]::Setting static routes...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 340
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:12]::Creating the Subnet 10.0.1.0/24...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 626
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:13]::Creating the Key Pair...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 62
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:13]::Creating the Certificate file...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 95
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:13]::Creating the Network ACL...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 661
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:14]::Creating the Security Group...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 335
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:14]::Getting the Amazon Machine Image...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 1255
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:15]::Creating the instance...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 1370
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:17]::Waiting for the instance to start...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 5066
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:22]::Waiting for the instance to start...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 5066
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:27]::Instance started!\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 242
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:27]::Waiting 30sec for password to be available...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 30103
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:31:57]::Waiting 30sec for password to be available...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 30061
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:32:27]::Waiting 30sec for password to be available...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 30059
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:32:57]::Waiting 30sec for password to be available...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 30064
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:33:27]::Waiting 30sec for password to be available...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 30065
+    content: "\e[0;34;94mVERBOSE: [DESKTOP 28/10/19 19:33:57]::Waiting 30sec for password to be available...\e[0m\e[0K\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 30088
+    content: "\e]0;[18052] Windows PowerShell 5.1 (00h05m)\a[14t\e[0;36m16.8\e[0;1m/\e[0;32;92m19:34:27\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G"
+  - delay: 1600
+    content: "\e[?25l\r\n[14t\e[0;36m16.8\e[0;1m/\e[0;32;92m19:34:29\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G\e[?25h"
+  - delay: 307
+    content: "\e[?25l\r[14t\e[0;36m16.8\e[0;1m/\e[0;32;92m19:34:29\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93m$\e[0m\e[0K\e[?25h"
+  - delay: 281
+    content: "\e[?25l\r[14t\e[0;36m16.8\e[0;1m/\e[0;32;92m19:34:29\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$d\e[0m\e[0K\e[?25h"
+  - delay: 27
+    content: "\e[0;32;92me\e[0m\e[0K"
+  - delay: 196
+    content: "\e[0;32;92mt\e[0m\e[0K"
+  - delay: 687
+    content: "\e[0;32;92ma\e[0m\e[0K"
+  - delay: 90
+    content: "\e[0;32;92mi\e[0m\e[0K"
+  - delay: 191
+    content: "\e[0;32;92mls\e[0m\e[0K"
+  - delay: 470
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 25
+    content: "\e[?25l\r\nName  Ipaddress   Credential\e[0K\r\n----  ---------   ----------\e[0K\r\nMyLab 63.32.45.94 System.Management.Automation.PSCredential\e[0K\r\n\e[0K\r\n\e[0K\r\n[15t00.0\e[0;1m/\e[0;32;92m19:34:31\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G\e[?25h"
+  - delay: 1069
+    content: "\e[?25l\r[15t00.0\e[0;1m/\e[0;32;92m19:34:31\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#\e[0m\e[0K\e[?25h"
+  - delay: 773
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 501
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 38
+    content: "\e[0;32mh\e[0m\e[0K"
+  - delay: 218
+    content: "\e[0;32ma\e[0m\e[0K"
+  - delay: 88
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 131
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 431
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 189
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 130
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 87
+    content: "\e[0;32mk\e[0m\e[0K"
+  - delay: 193
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 27
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 687
+    content: "\e[0;32mg\e[0m\e[0K"
+  - delay: 68
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 90
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 343
+    content: "\e[0;32md\e[0m\e[0K"
+  - delay: 122
+    content: "\e[0;32m,\e[0m\e[0K"
+  - delay: 129
+    content: "\e[?25l\e[0;32m \e[0m\e[0K\e[43G\e[?25h"
+  - delay: 35
+    content: "\e[44G"
+  - delay: 438
+    content: "\e[?25l\r[15t00.0\e[0;1m/\e[0;32;92m19:34:31\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m# that looks good, n\e[0m\e[0K\e[?25h"
+  - delay: 59
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 159
+    content: "\e[0;32mw\e[0m\e[0K"
+  - delay: 92
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 842
+    content: "\e[0;32m'\e[0m\e[0K"
+  - delay: 316
+    content: "\e[?25l\r[15t00.0\e[0;1m/\e[0;32;92m19:34:31\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m# that looks good, now \e[0m\e[0K\e[?25h"
+  - delay: 189
+    content: "\e[0;32ml\e[0m\e[0K"
+  - delay: 89
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 67
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 155
+    content: "\e[0;32m'\e[0m\e[0K"
+  - delay: 150
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 69
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 344
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 250
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 92
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 400
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 382
+    content: "\e[0;32mi\e[0m\e[0K"
+  - delay: 57
+    content: "\e[0;32mf\e[0m\e[0K"
+  - delay: 70
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 122
+    content: "\e[0;32mi\e[0m\e[0K"
+  - delay: 95
+    content: "\e[0;32mt\e[0m\e[0K"
+  - delay: 55
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 254
+    content: "\e[0;32mw\e[0m\e[0K"
+  - delay: 97
+    content: "\e[0;32mo\e[0m\e[0K"
+  - delay: 59
+    content: "\e[0;32mr\e[0m\e[0K"
+  - delay: 125
+    content: "\e[0;32mk\e[0m\e[0K"
+  - delay: 125
+    content: "\e[0;32ms\e[0m\e[0K"
+  - delay: 998
+    content: "\e[?25l\r\n[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G\e[?25h"
+  - delay: 162
+    content: "\e[?25l\r\n[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G\e[?25h"
+  - delay: 903
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93m$\e[0m\e[0K\e[?25h"
+  - delay: 253
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$d\e[0m\e[0K\e[?25h"
+  - delay: 32
+    content: "\e[0;32;92me\e[0m\e[0K"
+  - delay: 212
+    content: "\e[0;32;92ma\e[0m\e[0K"
+  - delay: 381
+    content: "\e[0;32;92mt\e[0m\e[0K"
+  - delay: 838
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$dea\e[0m\e[0K\e[?25h"
+  - delay: 130
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$de\e[0m\e[0K\e[?25h"
+  - delay: 656
+    content: "\e[0;32;92mt\e[0m\e[0K"
+  - delay: 123
+    content: "\e[0;32;92mails\e[0m\e[0K"
+  - delay: 903
+    content: ".\e[0K"
+  - delay: 192
+    content: "\e[0;1mc\e[0m\e[0K"
+  - delay: 190
+    content: "\e[0;1mr\e[0m\e[0K"
+  - delay: 57
+    content: "\e[0;1me\e[0m\e[0K"
+  - delay: 253
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m.\e[0;1mCredential\e[0m\e[0K\e[?25h"
+  - delay: 1282
+    content: ".\e[0K"
+  - delay: 313
+    content: "\e[0;1mg\e[0m\e[0K"
+  - delay: 92
+    content: "\e[0;1me\e[0m\e[0K"
+  - delay: 62
+    content: "\e[0;1mt\e[0m\e[0K"
+  - delay: 502
+    content: "\e[0;1mc\e[0m\e[0K"
+  - delay: 90
+    content: "\e[0;1mr\e[0m\e[0K"
+  - delay: 3316
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m.\e[0;1mCredential\e[0m.\e[0;1mgetc\e[0m\e[0K\e[?25h"
+  - delay: 123
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m.\e[0;1mCredential\e[0m.\e[0;1mget\e[0m\e[0K\e[?25h"
+  - delay: 623
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m.\e[0;1mCredential\e[0m.\e[0;1mGetHashCode\e[0m(\e[0K\e[?25h"
+  - delay: 566
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m.\e[0;1mCredential\e[0m.\e[0;1mGetNetworkCredential\e[0m(\e[0K\e[?25h"
+  - delay: 1028
+    content: ")\e[0K"
+  - delay: 350
+    content: ".\e[0K"
+  - delay: 183
+    content: "\e[0;1mP\e[0m\e[0K"
+  - delay: 127
+    content: "\e[0;1ma\e[0m\e[0K"
+  - delay: 185
+    content: "\e[0;1ms\e[0m\e[0K"
+  - delay: 90
+    content: "\e[0;1ms\e[0m\e[0K"
+  - delay: 129
+    content: "\e[0;1mw\e[0m\e[0K"
+  - delay: 99
+    content: "\e[0;1mo\e[0m\e[0K"
+  - delay: 90
+    content: "\e[0;1mr\e[0m\e[0K"
+  - delay: 124
+    content: "\e[0;1mdf\e[0m\e[0K"
+  - delay: 63
+    content: "\e[78G"
+  - delay: 253
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m.\e[0;1mCredential\e[0m.\e[0;1mGetNetworkCredential\e[0m().\e[0;1mPasswordf\e[0m |\e[0K\e[?25h"
+  - delay: 430
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m.\e[0;1mCredential\e[0m.\e[0;1mGetNetworkCredential\e[0m().\e[0;1mPasswordf\e[0m\e[0K\e[78G\e[?25h"
+  - delay: 134
+    content: "\e[77G"
+  - delay: 120
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m.\e[0;1mCredential\e[0m.\e[0;1mGetNetworkCredential\e[0m().\e[0;1mPassword\e[0m\e[0K\e[?25h"
+  - delay: 221
+    content: "\e[77G"
+  - delay: 216
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m.\e[0;1mCredential\e[0m.\e[0;1mGetNetworkCredential\e[0m().\e[0;1mPassword\e[0m |\e[0K\e[?25h"
+  - delay: 67
+    content: "\e[79G"
+  - delay: 837
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m.\e[0;1mCredential\e[0m.\e[0;1mGetNetworkCredential\e[0m().\e[0;1mPassword\e[0m | \e[0;33;93ms\e[0m\e[0K\e[?25h"
+  - delay: 66
+    content: "\e[0;33;93me\e[0m\e[0K"
+  - delay: 127
+    content: "\e[0;33;93mt\e[0m\e[0K"
+  - delay: 152
+    content: "\e[0;33;93m-\e[0m\e[0K"
+  - delay: 159
+    content: "\e[0;33;93mc\e[0m\e[0K"
+  - delay: 65
+    content: "\e[0;33;93ml\e[0m\e[0K"
+  - delay: 179
+    content: "\e[0;33;93mi\e[0m\e[0K"
+  - delay: 69
+    content: "\e[0;33;93mp\e[0m\e[0K"
+  - delay: 186
+    content: "\e[?25l\r[16t00.0\e[0;1m/\e[0;32;92m19:34:43\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92m$details\e[0m.\e[0;1mCredential\e[0m.\e[0;1mGetNetworkCredential\e[0m().\e[0;1mPassword\e[0m | \e[0;33;93mSet-Clipboard\e[0m\e[0K\e[?25h"
+  - delay: 749
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 37
+    content: "\e[?25l[17t00.0\e[0;1m/\e[0;32;92m19:35:02\e[0m]\e[0K\e[18G\e[?25h"
+  - delay: 25
+    content: "\e[?25l\r[17t00.0\e[0;1m/\e[0;32;92m19:35:02\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G\e[?25h"
+  - delay: 1503
+    content: "\e[?25l\r[17t00.0\e[0;1m/\e[0;32;92m19:35:02\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mm\e[0m\e[0K\e[?25h"
+  - delay: 219
+    content: "\e[0;33;93ms\e[0m\e[0K"
+  - delay: 57
+    content: "\e[0;33;93mt\e[0m\e[0K"
+  - delay: 39
+    content: "\e[0;33;93ms\e[0m\e[0K"
+  - delay: 122
+    content: "\e[0;33;93mc\e[0m\e[0K"
+  - delay: 153
+    content: "\e[31G"
+  - delay: 128
+    content: "\e[?25l\r[17t00.0\e[0;1m/\e[0;32;92m19:35:02\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mmstsc\e[0m \e[0;37;90m/\e[0m\e[0K\e[?25h"
+  - delay: 125
+    content: "\e[?25l\r[17t00.0\e[0;1m/\e[0;32;92m19:35:02\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mmstsc\e[0m /v\e[0K\e[?25h"
+  - delay: 27
+    content: "\e[34G"
+  - delay: 813
+    content: "\e[?25l\r[17t00.0\e[0;1m/\e[0;32;92m19:35:02\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mmstsc\e[0m /v $\e[0K\e[?25h"
+  - delay: 345
+    content: "\e[?25l\r[17t00.0\e[0;1m/\e[0;32;92m19:35:02\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mmstsc\e[0m /v \e[0;32;92m$d\e[0m\e[0K\e[?25h"
+  - delay: 33
+    content: "\e[0;32;92me\e[0m\e[0K"
+  - delay: 124
+    content: "\e[0;32;92mt\e[0m\e[0K"
+  - delay: 159
+    content: "\e[0;32;92mails\e[0m\e[0K"
+  - delay: 439
+    content: ".\e[0K"
+  - delay: 306
+    content: "\e[0;1mi\e[0m\e[0K"
+  - delay: 62
+    content: "\e[0;1mp\e[0m\e[0K"
+  - delay: 191
+    content: "\e[0;1ma\e[0m\e[0K"
+  - delay: 185
+    content: "\e[?25l\r[17t00.0\e[0;1m/\e[0;32;92m19:35:02\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93mmstsc\e[0m /v \e[0;32;92m$details\e[0m.\e[0;1mIpaddress\e[0m\e[0K\e[?25h"
+  - delay: 1410
+    content: "\e[?25l\r\n\e[0K\e[?25h"
+  - delay: 35
+    content: "[18t00.0\e[0;1m/\e[0;32;92m19:35:08\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G"
+  - delay: 4336
+    content: "\e[?25l\r[18t00.0\e[0;1m/\e[0;32;92m19:35:08\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#\e[0m\e[0K\e[?25h"
+  - delay: 565
+    content: "\e[?25l\r[18t00.0\e[0;1m/\e[0;32;92m19:35:08\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G\e[?25h"
+  - delay: 316
+    content: "\e]0;[18052] Windows PowerShell 5.1 (00h06m)\a\e[?25l\r\n[18t\e[0K\e[?25h"
+  - delay: 32
+    content: "00.0\e[0;1m/\e[0;32;92m19:35:13\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G"
+  - delay: 343
+    content: "\e[?25l\r[18t00.0\e[0;1m/\e[0;32;92m19:35:13\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32m#\e[0m\e[0K\e[?25h"
+  - delay: 314
+    content: "\e[0;32m \e[0m\e[0K"
+  - delay: 179
+    content: "\e[0;32mn\e[0m\e[0K"
+  - delay: 101
+    content: "\e[0;32mi\e[0m\e[0K"
+  - delay: 95
+    content: "\e[0;32mc\e[0m\e[0K"
+  - delay: 55
+    content: "\e[0;32me\e[0m\e[0K"
+  - delay: 221
+    content: "\e[0;32m!\e[0m\e[0K"
+  - delay: 910
+    content: "\e[?25l\r\n[19t00.0\e[0;1m/\e[0;32;92m19:35:16\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m\e[0K\e[25G\e[?25h"
+  - delay: 969
+    content: "\e[?25l\r[19t00.0\e[0;1m/\e[0;32;92m19:35:16\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;33;93me\e[0m\e[0K\e[?25h"
+  - delay: 156
+    content: "\e[0;33;93mx\e[0m\e[0K"
+  - delay: 92
+    content: "\e[0;33;93mi\e[0m\e[0K"
+  - delay: 219
+    content: "\e[?25l\r[19t00.0\e[0;1m/\e[0;32;92m19:35:16\e[0m] \e[0;34;94mC:\\\e[0;1m>\e[0m \e[0;32;92mexit\e[0m\e[0K\e[?25h"
+  - delay: 659
+    content: "\e[?25l\r\n\e[0K\e[?25h"

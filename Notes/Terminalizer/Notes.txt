@@ -1,0 +1,12 @@
+# the CSS file is located in:
+
+$file = "$env:APPDATA\npm\node_modules\terminalizer\render\dist\css\app.css"
+Test-Path $file
+
+# you need to change the Padding from 16px to 2px
+# and its associated color from black (#1d1d1d) to purple (#282a48)
+
+$FindThis    = '.terminalizer-body{background-color:#1d1d1d;padding:16px}'
+$ReplaceWith = '.terminalizer-body{background-color:#282a48;padding:2px}'
+(Get-Content $file -Raw).Replace($FindThis,$ReplaceWith) | Set-Content $file
+

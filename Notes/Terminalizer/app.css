@@ -1,0 +1,182 @@
+/**
+ * Terminalizer
+ * 
+ * @author Mohammad Fares <faressoft.com@gmail.com>
+ */
+
+body {
+  background-color: white;
+  margin: 0;
+}
+
+#terminal {
+  display: inline-block;
+  font-size: 0px;
+}
+
+.terminalizer,.terminalizer-player{display:inline-block}.terminalizer .xterm .xterm-viewport{overflow-y:hidden!important}.terminalizer-frame{position:relative}.terminalizer div{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}.terminalizer-frame.terminalizer-window{border-radius:6px;border:1px solid #b3b3b3;box-shadow:0 0 18px #b3b3b3;margin:18px;overflow:hidden}.terminalizer-frame.terminalizer-window .terminalizer-titlebar{-moz-border-top-left-radius:6px;-moz-border-top-right-radius:6px;-webkit-border-top-left-radius:6px;-webkit-border-top-right-radius:6px;background:#e8e8e8;border-bottom:1px solid #b1aeb1;border-top-left-radius:6px;border-top-right-radius:6px;border-top:1px solid #f3f1f3;color:#3b4247;font-family:Arial,sans-serif;font-size:14px;height:22px;line-height:22px;position:relative;text-align:center;width:100%}.terminalizer-frame.terminalizer-window .terminalizer-titlebar .buttons{left:8px;line-height:0;position:absolute;top:3.5px}.terminalizer-frame.terminalizer-window .terminalizer-titlebar .close-button{-moz-border-radius:50%;-webkit-border-radius:50%;background:#ff5c5c;border-radius:50%;border:1px solid #e33e41;display:inline-block;height:12px;width:12px}.terminalizer-frame.terminalizer-window .terminalizer-titlebar .minimize-button{-moz-border-radius:50%;-webkit-border-radius:50%;background:#ffbd4c;border-radius:50%;border:1px solid #e09e3e;display:inline-block;height:12px;margin-left:4px;width:12px}.terminalizer-frame.terminalizer-window .terminalizer-titlebar .maximize-button{-moz-border-radius:50%;-webkit-border-radius:50%;background:#00ca56;border-radius:50%;border:1px solid #14ae46;display:inline-block;height:12px;margin-left:4px;width:12px}.terminalizer-frame.terminalizer-window .terminalizer-body{background-color:#282a48;padding:2px}.terminalizer-frame.terminalizer-floating{-moz-border-radius:6px;-webkit-border-radius:6px;background-color:#1d1d1d;border-radius:6px;box-shadow:0 0 18px #b3b3b3;margin:18px;overflow:hidden}.terminalizer-frame.terminalizer-floating .terminalizer-titlebar{color:#fff;font-family:Arial,sans-serif;font-size:14px;height:34px;line-height:34px;position:relative;text-align:center;width:100%}.terminalizer-frame.terminalizer-floating .terminalizer-titlebar .buttons{left:13px;line-height:0;position:absolute;top:9px}.terminalizer-frame.terminalizer-floating .terminalizer-titlebar .close-button{-moz-border-radius:50%;-webkit-border-radius:50%;background:#ff5c5c;border-radius:50%;display:inline-block;height:15px;width:15px}.terminalizer-frame.terminalizer-floating .terminalizer-titlebar .minimize-button{-moz-border-radius:50%;-webkit-border-radius:50%;background:#ffbd4c;border-radius:50%;display:inline-block;height:15px;line-height:10px;margin-left:4px;width:15px}.terminalizer-frame.terminalizer-floating .terminalizer-titlebar .maximize-button{-moz-border-radius:50%;-webkit-border-radius:50%;background:#00ca56;border-radius:50%;display:inline-block;height:15px;line-height:10px;margin-left:4px;width:15px}.terminalizer-frame.terminalizer-floating .terminalizer-body{padding:20px}.terminalizer-frame.terminalizer-solid{-moz-border-radius:6px;-webkit-border-radius:6px;background-color:#1d1d1d;border-radius:6px;box-shadow:0 0 18px #b3b3b3;margin:18px;overflow:hidden}.terminalizer-frame.terminalizer-solid .terminalizer-titlebar{color:#fff;font-family:Arial,sans-serif;font-size:14px;position:relative;text-align:center;width:100%}.terminalizer-frame.terminalizer-solid .terminalizer-titlebar .title{margin:15px}.terminalizer-frame.terminalizer-solid .terminalizer-titlebar .buttons,.terminalizer-frame.terminalizer-solid .terminalizer-titlebar .title:empty{display:none}.terminalizer-frame.terminalizer-solid .terminalizer-body{padding:20px}.terminalizer-player{position:relative;font-size:0}.terminalizer-player .controller{background:#45484d;bottom:0;display:none;font-family:Helvetica,Arial,sans-serif;font-size:12px;height:30px;position:absolute;width:100%;z-index:20;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#45484d",endColorstr="#000000",GradientType=0);background:linear-gradient(180deg,#45484d 0,#000);transition:height .2s ease;-webkit-transition:height .2s ease;-moz-transition:height ease .2s;-o-transition:height ease .2s}.terminalizer-player.controls .controller{display:block}.terminalizer-player.playing .controller{height:0;overflow:hidden}.terminalizer-player.playing:hover .controller{height:30px;overflow:hidden}.terminalizer-player .pause,.terminalizer-player .play{fill:#cacaca;float:left;height:30px;line-height:30px;text-align:center;width:40px}.terminalizer-player .pause .icon,.terminalizer-player .play .icon{border-color:transparent transparent transparent #cacaca;box-sizing:border-box;cursor:pointer;display:inline-block;height:15px}.terminalizer-player .pause .icon{border-style:double;border-width:0 0 0 12px;margin-top:7px}.terminalizer-player .play .icon{border-style:solid;border-width:8px 0 8px 13px;margin-top:6px}.terminalizer-player .pause,.terminalizer-player.playing .play{display:none}.terminalizer-player.playing .pause{display:inline-block}.terminalizer-player .timer{color:#cacaca;float:right;line-height:30px;padding:0 10px}.terminalizer-player .progressbar-wrapper{height:30px;line-height:28px;overflow:hidden}.terminalizer-player .progressbar{background-color:#424242;display:inline-block;height:7px;overflow:hidden;width:100%;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px}.terminalizer-player.started .progressbar{cursor:pointer}.terminalizer-player .progress{background-color:#cacaca;height:7px;position:relative;width:0}.terminalizer-player .cover{cursor:pointer;height:100%;position:absolute;width:100%;z-index:10}.terminalizer-player .start svg{cursor:pointer;fill:#eaeaea;height:130px;left:50%;margin-left:-65px;margin-top:-65px;position:absolute;top:50%;width:130px;z-index:20;filter:drop-shadow(10px 10px 15px rgba(0,0,0,.4));-webkit-filter:drop-shadow(10px 10px 15px rgba(0,0,0,.4))}.terminalizer-player.small .start svg{height:60px;margin-left:-30px;margin-top:-30px;width:60px}.terminalizer-player.framed .start svg{transform:translateY(8px);-webkit-transform:translateY(8px);-moz-transform:translateY(8px);-o-transform:translateY(8px);-ms-transform:translateY(8px)}.terminalizer-player .cover:hover+.start svg,.terminalizer-player .start:hover svg{fill:#fff}.terminalizer-player.started .cover,.terminalizer-player.started .start{display:none}.terminalizer-player .terminalizer-watermark{z-index:99999}
+/**
+ * Copyright (c) 2014 The xterm.js authors. All rights reserved.
+ * Copyright (c) 2012-2013, Christopher Jeffrey (MIT License)
+ * https://github.com/chjj/term.js
+ * @license MIT
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * Originally forked from (with the author's permission):
+ *   Fabrice Bellard's javascript vt100 for jslinux:
+ *   http://bellard.org/jslinux/
+ *   Copyright (c) 2011 Fabrice Bellard
+ *   The original design remains. The terminal itself
+ *   has been extended to include xterm CSI codes, among
+ *   other features.
+ */
+
+/**
+ *  Default styles for xterm.js
+ */
+
+.xterm {
+    font-family: courier-new, courier, monospace;
+    font-feature-settings: "liga" 0;
+    position: relative;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.xterm.focus,
+.xterm:focus {
+    outline: none;
+}
+
+.xterm .xterm-helpers {
+    position: absolute;
+    top: 0;
+    /**
+     * The z-index of the helpers must be higher than the canvases in order for
+     * IMEs to appear on top.
+     */
+    z-index: 10;
+}
+
+.xterm .xterm-helper-textarea {
+    /*
+     * HACK: to fix IE's blinking cursor
+     * Move textarea out of the screen to the far left, so that the cursor is not visible.
+     */
+    position: absolute;
+    opacity: 0;
+    left: -9999em;
+    top: 0;
+    width: 0;
+    height: 0;
+    z-index: -10;
+    /** Prevent wrapping so the IME appears against the textarea at the correct position */
+    white-space: nowrap;
+    overflow: hidden;
+    resize: none;
+}
+
+.xterm .composition-view {
+    /* TODO: Composition position got messed up somewhere */
+    background: #000;
+    color: #FFF;
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.xterm .composition-view.active {
+    display: block;
+}
+
+.xterm .xterm-viewport {
+    /* On OS X this is required in order for the scroll bar to appear fully opaque */
+    background-color: #000;
+    overflow-y: scroll;
+    cursor: default;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.xterm .xterm-screen {
+    position: relative;
+}
+
+.xterm .xterm-screen canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.xterm .xterm-scroll-area {
+    visibility: hidden;
+}
+
+.xterm-char-measure-element {
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: -9999em;
+    line-height: normal;
+}
+
+.xterm {
+    cursor: text;
+}
+
+.xterm.enable-mouse-events {
+    /* When mouse events are enabled (eg. tmux), revert to the standard pointer cursor */
+    cursor: default;
+}
+
+.xterm.xterm-cursor-pointer {
+    cursor: pointer;
+}
+
+.xterm.xterm-cursor-crosshair {
+    /* Column selection mode */
+    cursor: crosshair;
+}
+
+.xterm .xterm-accessibility,
+.xterm .xterm-message {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    color: transparent;
+}
+
+.xterm .live-region {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
